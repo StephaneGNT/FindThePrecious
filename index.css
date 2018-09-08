@@ -1,0 +1,107 @@
+.row{
+    margin: 0;
+    padding: 0;
+}
+.mainSection{
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+#pills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#fellowsBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cardRing{
+    margin-top: 10px;
+}
+.card-body{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+.card-title{
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: .5em;
+    margin: 0;
+}
+.card-text{
+    padding: 1em;
+}
+#ringCapabilities{
+    width: 80%;
+    margin-left: 10%;
+}
+.table-bordered{
+    border: black;
+}
+#gollum img{
+    border-radius: 50%;
+    margin:15px;
+}
+form, .innerLinks, #outterLinks{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width:70%;
+    margin-left: 15%;
+}
+form input, form select, form text-area{
+    margin: 5px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: black;
+    padding: 15px;
+}
+.innerLinks a, #outterLinks a{
+    color: white;
+}
+#outterLinks a{
+    font-weight: bold;
+}
+.fellow img{
+    opacity: .7;;
+}
+.reward{
+    width: 80%;
+    margin-left:10%;
+    background-color: white;
+    opacity:.7;
+    position: absolute;
+    top:25px;    
+    text-align: center;
+    border-radius: 25px
+}
+.reward p{
+    font-size: 1.9em;
+    margin:10px auto;
+}
+.reward span{
+    color: #FD9766;
+}
+.fellow:hover .reward{
+    display: none;
+}
+.fellow:hover img{
+    opacity: 1;
+}
+#dead{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    font-weight: bold;
+    font-size: 2.2em;
+}
