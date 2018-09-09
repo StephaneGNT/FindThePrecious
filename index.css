@@ -126,9 +126,18 @@ h2 span{
 .table-bordered{
     border: black;
 }
+#gollum{
+    padding: 0;
+    height: 60%;
+    width: 60%;
+    margin: 10%;   
+}
 #gollum img{
-    border-radius: 50%;
-    margin:15px;
+    width: 100%;
+    height: auto;
+}
+#joinUsSection img, #contactSection img{
+    width: 100%;
 }
 form, .innerLinks, #outterLinks{
     display: flex;
