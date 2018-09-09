@@ -14,12 +14,12 @@
 	<body class="container">
         
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">FindThePrecious.com</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse text-right" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Fellows <span class="sr-only">(current)</span></a>
@@ -47,25 +47,25 @@
         <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img class="d-block w-100" src="http://via.placeholder.com/800x200" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Get them !</h5>
-                    <p>quick...</p>
-                </div>
-                </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="http://via.placeholder.com/800x200" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Get them !</h5>
-                    <p>quick...</p>
-                </div>
+                    <img class="d-block w-100" src="images/dark_vador.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Sauron is a very good bro,</h1>
+                        <p>please help him to find the ring !</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="http://via.placeholder.com/800x200" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Get them !</h5>
-                    <p>quick...</p>
+                    <img class="d-block w-100" src="images/army.jpeg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>They are coming !</h1>
+                        <p>Kill them all !</p>
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://via.placeholder.com/800x200" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Get them !</h5>
+                        <p>quick...</p>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev control" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -79,53 +79,62 @@
         </div>
     
         <!-- FELLOWS SECTION -->
-        <div class="row col-12 mainSection">
-            <h2>Fellows wanted dead <span>(or alive if you want to eat them later)</span></h2>
+        <div class="row col-12" id="mainFellowsSection">
+            <span class="surrounders">Ij  </span><h2>  Fellows wanted dead <span>(or alive if you want to eat them later)</span>  </h2><span class="surrounders">  jI</span>
             <section id="fellowsSection" class="row col-12">
                 <section id="pills" class="row col-12">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                        <a class="nav-link active btn-light" href="#">Most wanted</a>
+                            <a class="nav-link btn-light" href="#">Most wanted</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link btn-light" href="#">Most dangerous</a>
+                            <a class="nav-link btn-light active" href="#"><span class="surrounders">b  </span>Most dangerous<span class="surrounders">  b</span></a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link btn-light" href="#">Already captured</a>
+                            <a class="nav-link btn-light" href="#">Already captured</a>
                         </li>
                     </ul>
                 </section>
                 <div class="row col-12" id="fellowsBlock">
                     <div class="card fellow" style="width: 18rem;">
-                        <img class="card-img-top" src="http://via.placeholder.com/200x200" alt="Card image cap">
+                        <img class="card-img-top" src="images/gandalf.png" alt="Card image cap">
                         <div class="reward">
-                            <p>Reward <span>1000 </span>golden coins</p>
+                            <p>Reward<br><span>1000 </span>golden coins</p>
                         </div>
-                        <div class="card-body">
-                            <h3>The Wizard</h3>
-                            <p class="card-text">Small description...</p>
+                        <div class="name text-center">
+                            <p>Gandalf</p>
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="http://via.placeholder.com/200x200" alt="Card image cap">
-                        <div id="dead" class="text-center">
-                            <p>DEAD</p>
-                        </div>
-                        <div class="card-body">
-                            <h3>Hobbit 3</h3>
-                            <p class="card-text">Small description...</p>
+                        <div class="card-body fellowDescription">
+                            <p class="card-text">A very dangerous wizard blablablabla</p>
                         </div>
                     </div>
                     <div class="card fellow" style="width: 18rem;">
-                        <img class="card-img-top" src="http://via.placeholder.com/200x200" alt="Card image cap">
+                        <img class="card-img-top" src="images/aragorn.png" alt="Card image cap">
                         <div class="reward">
-                            <p>Reward <span>250 </span>golden coins</p>
+                            <p>Reward<br><span>250 </span>golden coins</p>
                         </div>
-                        <div class="card-body">
-                            <h3>Yummy dwarf</h3>
-                            <p class="card-text">Small description...</p>
+                        <div class="name text-center">
+                            <p>Aragorn</p>
+                        </div>
+                        <div class="card-body fellowDescription">
+                            <p class="card-text">A very dangerous warrior blablablabla</p>
                         </div>
                     </div>
+                    <div class="card fellowDead" style="width: 18rem;">
+                        <img class="card-img-top" src="images/gimli.png" alt="Card image cap">
+                        <div class="dead">
+                            <span>dead</span>
+                        </div>
+                        <div class="name text-center">
+                            <span style='color:orangered;text-decoration:line-through'>
+                                <span style='color:white'>gimli</span>
+                            </span>
+                        </div>
+                        <div class="card-body fellowDescription">
+                            <p class="card-text">A dwarf with a beard and an axe</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
         </div>
@@ -136,15 +145,15 @@
                 <h2>I have captured one of them</h2>
             </div>
             <div class="row col-12">
-                <div class="col-sm-9 col-xs-6">
+                <div class="col-9">
                     <p>Soleo saepe ante oculos ponere, idque libenter crebris usurpare sermonibus, omnis nostrorum imperatorum, omnis exterarum gentium potentissimorumque populorum, omnis clarissimorum regum res gestas, cum tuis nec contentionum magnitudine nec numero proeliorum nec varietate regionum nec celeritate conficiendi nec dissimilitudine bellorum posse conferri; nec vero disiunctissimas terras citius passibus cuiusquam potuisse peragrari, quam tuis non dicam cursibus, sed victoriis lustratae sunt.</p>
+                    <div class="text-center">
+                        <button class="btn btn-light">Contact us</button>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-xs-6">
+                <div class="col-3">
                     <img class="card-img-top" src="http://via.placeholder.com/140x140" alt="Card image cap"> 
                 </div>
-            </div>
-            <div class="row col-12 text-center">
-                <button class="btn btn-light">Contact us</button>
             </div>
         </div>
 
@@ -154,7 +163,7 @@
                 <h2>Best hunters</h2>
             </div>
             <div class="row col-12">
-                <div class="media col-sm-6 col-xs-12">
+                <div class="media col-6">
                     <img class="mr-3" src="http://via.placeholder.com/70x70" alt="Generic placeholder image">
                     <div class="media-body">
                         <h5 class="mt-0">ElvesKiller</h5>
@@ -162,7 +171,7 @@
                         <button class="btn btn-primary">68K likes</button>
                     </div>
                 </div>
-                <div class="media col-sm-6 col-xs-12">
+                <div class="media col-6">
                     <img class="mr-3" src="http://via.placeholder.com/70x70" alt="Generic placeholder image">
                     <div class="media-body">
                         <h5 class="mt-0">Goblin45</h5>
@@ -207,13 +216,13 @@
                 <div class="card-body">
                     <p class="card-title">Why is the ring awesome ?</p>
                     <div class="row col-12">
-                        <div class="col-sm-9 col-xs-12 mt-3">
+                        <div class="col-9 mt-3">
                             <p>My preciouuuuuuuuuuuuuuuuuuuuuuuuuuuus !!!!</p>
                             <div class="text-right">    
                                 <cite>Gollum</cite>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-xs-12 text-center" id="gollum">
+                        <div class="col-3 text-center" id="gollum">
                             <img src="http://via.placeholder.com/110x110" alt="Generic placeholder image">
                         </div>
                     </div>
@@ -227,10 +236,10 @@
                 <h2>Join Mordor Army, we need you !</h2>
             </div>
             <div class="row col-12">
-                <div class="col-sm-3 col-xs-12 text-center">
+                <div class="col-3">
                     <img src="http://via.placeholder.com/140x140" alt="Generic placeholder image">
                 </div>
-                <div class="col-sm-9 col-xs-12">
+                <div class="col-9">
                     <p>Soleo saepe ante oculos ponere, idque libenter crebris usurpare sermonibus, omnis nostrorum imperatorum, omnis exterarum gentium potentissimorumque populorum, omnis clarissimorum regum res gestas, cum tuis nec contentionum magnitudine nec numero proeliorum nec varietate regionum nec celeritate conficiendi nec dissimilitudine bellorum posse conferri; nec vero disiunctissimas terras citius passibus cuiusquam potuisse peragrari, quam tuis non dicam cursibus, sed victoriis lustratae sunt.</p>
                     <div class="text-center">
                         <button class="btn btn-light">More info on SauronRulesThemAll.com</button>

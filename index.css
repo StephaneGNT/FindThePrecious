@@ -1,3 +1,18 @@
+@font-face{
+    font-family: "TitleFont";
+    src: url("police/titlePolice.ttf")format("truetype");
+}
+@font-face{
+    font-family: "TextFont";
+    src: url('police/textPolice.ttf')format("truetype");
+}
+@font-face{
+    font-family: "SymbolFont";
+    src: url('police/symbolPolice.ttf')format("truetype");
+}
+body{
+    font-family: "TextFont";
+}
 .row{
     margin: 0;
     padding: 0;
@@ -5,13 +20,60 @@
 .mainSection{
     margin-top: 30px;
     border-top: 1px solid black;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
     padding-top: 30px;
+}
+.navbar{
+    background-color: orangered;
+}
+.nav-item a{
+    font-family: "TitleFont";
+}
+.active{
+    text-decoration: underline;
+}
+.carousel-inner img{
+    height: 400px;
+}
+.carousel-caption{
+    text-align: left;
+    top: 50%;
+    transform: translateY(-35%);
 }
 #pills{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px;
+}
+#mainFellowsSection{
+    background-color: #f7eadc;
+    padding: 15px;
+    padding-top: 50px;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}
+.surrounders{
+    font-family: "SymbolFont";
+    color: orangered;
+}
+h2{
+    font-family: "TitleFont";
+    font-size: 20px;
+}
+h2 span{
+    font-size: 15px;
+}
+.nav-pills .btn-light{
+    margin-top: 10px;
+    background-color:  #f7eadc;
+    color: orangered;
+}
+.nav-pills .active{
+    margin-top: 10px;
+    background-color:  #f7eadc !important;
+    color: orangered !important;
 }
 #fellowsBlock{
     display: flex;
@@ -72,10 +134,35 @@ form input, form select, form text-area{
 #outterLinks a{
     font-weight: bold;
 }
-.fellow img{
-    opacity: .7;;
+.fellow, .fellowDead{
+    border: solid 4px black;
+    background-color: grey;
+    border-radius: 0;
 }
-.reward{
+.fellowDead{
+    background-color: black;
+}
+.fellow img{
+    opacity: .7;
+}
+.fellowDead img{
+    opacity: .3;
+}
+.name, .nameDead{
+    width: 100%;
+    position: absolute;
+    top:150px;
+    font-size:3em     
+}
+.nameDead{
+    text-decoration: line-through;
+    color: orangered;
+}
+.card-body, .card-img-top{
+    border-radius: 0;
+    background-color: grey;
+}
+.reward, .dead{
     width: 80%;
     margin-left:10%;
     background-color: white;
@@ -83,14 +170,27 @@ form input, form select, form text-area{
     position: absolute;
     top:25px;    
     text-align: center;
-    border-radius: 25px
+    border-radius: 2px;
+    font-size: 1.6em;
+}
+.dead{
+    background-color: transparent;
+    font-size: 4em;
+    color: orangered;
 }
 .reward p{
-    font-size: 1.9em;
-    margin:10px auto;
+    margin:2px auto;
+    color: black;
 }
 .reward span{
     color: #FD9766;
+}
+.fellowDescription{
+    border: none;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
 }
 .fellow:hover .reward{
     display: none;
