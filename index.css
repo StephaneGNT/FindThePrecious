@@ -27,8 +27,28 @@ body{
 .navbar{
     background-color: orangered;
 }
+.navbar-collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+@media screen and (max-width: 992px) {
+    .navbar-brand{
+        width: 65%;
+    }
+}
+@media screen and (min-width: 993px) {
+    .navbar-brand{
+        width: 20%;
+    }
+}
+.navbar-brand img{
+    width: 100%;
+}
+
 .nav-item a{
     font-family: "TitleFont";
+    font-size: 0.8em;
 }
 .active{
     text-decoration: underline;
@@ -36,11 +56,11 @@ body{
 .carousel-inner img{
     height: 400px;
 }
-/*.carousel-caption{
+.carousel-caption{
     text-align: left;
     top: 50%;
     transform: translateY(-35%);
-}*/
+}
 #pills{
     display: flex;
     justify-content: center;
