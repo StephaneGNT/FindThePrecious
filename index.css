@@ -36,11 +36,11 @@ body{
 .carousel-inner img{
     height: 400px;
 }
-.carousel-caption{
+/*.carousel-caption{
     text-align: left;
     top: 50%;
     transform: translateY(-35%);
-}
+}*/
 #pills{
     display: flex;
     justify-content: center;
