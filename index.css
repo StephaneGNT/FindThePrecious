@@ -101,29 +101,78 @@ h2 span{
     justify-content: space-around;
     align-items: center;
 }
-.cardRing{
-    margin-top: 10px;
+#rewardSection{
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    padding: 15px;
 }
-.card-body{
-    border: 1px solid lightgrey;
+#rewardSection img{
+    border-radius: 50%;
+}
+#rewardSection .btn{
+    background-color: lightgrey;
+    color: orangered;
+    font-size: 1.4em;
+}
+#huntersSection, #joinUsSection{
+    margin-top: 0;
+    background-color: #f7eadc;
+    padding: 15px;
+}
+#huntersSection h5{
+    color: orangered;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#huntersSection a{
+    text-decoration: underline;
+}
+#huntersSection .btn, #joinUsSection .btn{
+    background-color: black;
+    color: orangered;
+}
+#ringSection, #contactSection{
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    padding: 15px;    
+}
+#ringSection .cardRing{
+    margin-top: 10px;
+    border: none; 
+}
+#ringSection .card-body{
+    background-color: lightgrey;
+    color: black;
     border-radius: 5px;
     padding: 0;
     margin: 0;
 }
-.card-title{
-    font-weight: bold;
-    background-color: lightgrey;
-    padding: .5em;
-    margin: 0;
-}
-.card-text{
-    padding: 1em;
-}
 #ringCapabilities{
     width: 80%;
     margin-left: 10%;
+    border: none;
 }
-.table-bordered{
+#ringSection .thead{
+    text-decoration: underline;
+    border-bottom: 1px solid black;
+}
+#ringSection tr{
+    border-bottom: 1px solid grey;
+}
+#ringSection .card-title{
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    padding: .5em;
+    margin: 0;
+}
+#ringSection .card-text{
+    padding: 1em;
+}
+
+#ringSection .table-bordered{
     border: black;
 }
 #gollum{
@@ -139,6 +188,10 @@ h2 span{
 #joinUsSection img, #contactSection img{
     width: 100%;
 }
+#joinUsSection span{
+    color: orangered;
+    font-size: 1.3em;
+}
 form, .innerLinks, #outterLinks{
     display: flex;
     flex-direction: column;
@@ -153,8 +206,7 @@ form input, form select, form text-area{
 .footer{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    background-color: black;
+    background-color: orangered;
     padding: 15px;
 }
 .innerLinks a, #outterLinks a{
